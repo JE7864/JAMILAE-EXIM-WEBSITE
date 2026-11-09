@@ -96,6 +96,44 @@ h1{font-size:29px}
 footer{padding-top:10px;padding-bottom:10px}
 }
 
+
+/* JEBG brand palette, aligned with the technology division's website. */
+.tech{background:radial-gradient(ellipse at 82% 12%,#123c53 0,transparent 65%),#07131e;border-color:#223c4e;color:#eaf4fc}
+.tech:before{background:linear-gradient(145deg,#102e4138,transparent 70%)}
+.tech:after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#4ad9eb,#8ae0bd55);pointer-events:none}
+.tech:hover{box-shadow:0 16px 35px #07131e24;border-color:#3c768b}
+.tech .jebg-panel-brand{display:flex;align-items:center;gap:11px}
+.tech .jebg-panel-brand b{padding:6px 9px;border:1px solid #53d6e8;border-radius:3px;color:#4ad9eb;font:800 11px Manrope,Arial,sans-serif;letter-spacing:2px}
+.tech .jebg-panel-brand>span{font:600 9px Manrope,Arial,sans-serif;letter-spacing:1.5px;color:#bdd3e2}
+.tech .number{color:#9db4c5!important}
+.tech .category{color:#4ad9eb}
+.tech h2{font-family:Manrope,Arial,sans-serif;font-weight:600;letter-spacing:-1.1px;font-size:clamp(24px,2.25vw,33px)}
+.tech .description{color:#9db4c5}
+.tech .card-action{border-color:#223c4e;color:#ccebf6}
+.tech .arrow{border-color:#3b697e;color:#4ad9eb;border-radius:4px}
+.tech:hover .arrow{background:#4ad9eb;border-color:#4ad9eb;color:#05202c}
+.tech:focus-visible{outline-color:#4ad9eb}
+.transition{opacity:1;visibility:hidden;transform:translate3d(-100%,0,0);transition:transform .6s cubic-bezier(.76,0,.24,1),visibility 0s .6s;overflow:hidden}
+.transition:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 80% 20%,#123c53 0,transparent 70%);opacity:0}
+.transition.is-tech{background:#07131e;color:#eaf4fc}
+.transition.is-tech:before{opacity:1}
+.transition.is-tech p{color:#4ad9eb}
+.transition.is-tech strong{font-family:Manrope,Arial,sans-serif;font-weight:600;letter-spacing:-1px}
+.transition.is-tech .loader:after{background:#4ad9eb}
+.transition.is-exports{transform:translate3d(100%,0,0);background:#182834}
+.transition.active{visibility:visible;transform:translate3d(0,0,0);transition:transform .6s cubic-bezier(.76,0,.24,1),visibility 0s}
+.transition> *{position:relative;z-index:1}
+body.is-navigating .division{pointer-events:none}
+@media(max-width:760px){
+.tech .jebg-panel-brand b{padding:4px 7px;font-size:10px}
+.tech .jebg-panel-brand>span{font-size:8px}
+.tech h2{font-size:25px;letter-spacing:-.8px}
+.tech .division-content{padding-top:10px}
+}
+@media(prefers-reduced-motion:reduce){
+.transition,.transition.is-exports{transform:none}
+}
+
 </style>
 </head>
 <body>
@@ -104,9 +142,9 @@ footer{padding-top:10px;padding-bottom:10px}
 <section class="intro" aria-labelledby="intro-title"><div><p class="eyebrow">Welcome to Jamila Exim</p><h1 id="intro-title">Connecting possibilities.<br><em>Across every frontier.</em></h1></div><p class="intro-copy">From artificial intelligence to international trade, discover the two businesses that make up Jamila Exim. Choose your destination below.</p></section>
 <section class="divisions" aria-label="Explore our business divisions">
 <a class="division tech" id="tech-link" href="https://jebg.jamilaexim.com/" data-name="JEBG AI Technologies">
-<div class="card-top"><span>Intelligence without boundaries</span><span class="number">01 /</span></div>
-<div class="art" aria-hidden="true"><svg viewBox="0 0 400 250" fill="none"><defs><radialGradient id="glow"><stop stop-color="#bee9aa" stop-opacity=".25"/><stop offset="1" stop-color="#bee9aa" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="120" r="110" fill="url(#glow)"/><g stroke="#a5ca93" stroke-width=".65"><circle cx="200" cy="120" r="75" opacity=".55"/><circle cx="200" cy="120" r="91" opacity=".2"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(-35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="75" ry="27" opacity=".55"/><path d="M125 120h150M200 45v150" opacity=".3"/><path d="m111 45 39 29 50-29 50 29 39-29M105 191l45-25 50 29 50-29 45 25" opacity=".35"/></g><g class="orbit" style="transform-origin:200px 120px"><ellipse cx="200" cy="120" rx="122" ry="50" transform="rotate(-25 200 120)" stroke="#d9bb80" stroke-width=".7" opacity=".65"/><circle cx="310" cy="68" r="3" fill="#d9bb80"/></g><g class="pulse" fill="#d7efbf"><circle cx="200" cy="45" r="2.5"/><circle cx="125" cy="120" r="2.5"/><circle cx="248" cy="162" r="2.5"/><circle cx="172" cy="99" r="2"/></g></svg></div>
-<div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Explore our technology business and discover a world of possibilities powered by AI.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
+<div class="card-top"><span class="jebg-panel-brand"><b>JEBG</b><span>AI TECHNOLOGIES</span></span><span class="number">01 /</span></div>
+<div class="art" aria-hidden="true"><svg viewBox="0 0 400 250" fill="none"><defs><radialGradient id="glow"><stop stop-color="#4ad9eb" stop-opacity=".25"/><stop offset="1" stop-color="#4ad9eb" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="120" r="110" fill="url(#glow)"/><g stroke="#4ad9eb" stroke-width=".65"><circle cx="200" cy="120" r="75" opacity=".55"/><circle cx="200" cy="120" r="91" opacity=".2"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(-35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="75" ry="27" opacity=".55"/><path d="M125 120h150M200 45v150" opacity=".3"/><path d="m111 45 39 29 50-29 50 29 39-29M105 191l45-25 50 29 50-29 45 25" opacity=".35"/></g><g class="orbit" style="transform-origin:200px 120px"><ellipse cx="200" cy="120" rx="122" ry="50" transform="rotate(-25 200 120)" stroke="#4ad9eb" stroke-width=".7" opacity=".65"/><circle cx="310" cy="68" r="3" fill="#4ad9eb"/></g><g class="pulse" fill="#8ae0bd"><circle cx="200" cy="45" r="2.5"/><circle cx="125" cy="120" r="2.5"/><circle cx="248" cy="162" r="2.5"/><circle cx="172" cy="99" r="2"/></g></svg></div>
+<div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Industrial AI, engineering intelligence, and business automation. Explore JEBG products and consultancy.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="division exports" id="exports-link" href="https://jamilaexim.linker.store/" data-name="International Exports">
 <div class="card-top"><span>Trade beyond borders</span><span class="number">02 /</span></div>
@@ -136,11 +174,16 @@ event.preventDefault();
 if (navigating) return;
 navigating = true;
 document.getElementById('destination').textContent = link.dataset.name;
+overlay.classList.remove('is-tech','is-exports');
+overlay.classList.add(key === 'technology' ? 'is-tech' : 'is-exports');
+// Establish the selected entrance direction before starting the slide.
+void overlay.offsetWidth;
+document.body.classList.add('is-navigating');
 overlay.classList.add('active');
-setTimeout(() => window.location.assign(link.href), 650);
+setTimeout(() => window.location.assign(link.href), 780);
 });
 }
-window.addEventListener('pageshow', () => { navigating = false; overlay.classList.remove('active'); });
+window.addEventListener('pageshow', () => { navigating = false; overlay.classList.remove('active','is-tech','is-exports'); document.body.classList.remove('is-navigating'); });
 })();
 </script>
 </body></html>
