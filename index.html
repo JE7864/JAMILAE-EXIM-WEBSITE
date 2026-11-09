@@ -189,25 +189,28 @@ footer{color:#858b87}
 @media(max-width:380px){.live-art{width:105px;right:3px}.tech .division-content,.exports .division-content{padding-right:75px}.card-action{width:calc(100% + 75px)}}
 
 
-/* Animated digital brain and worldwide cargo routes. */
-.visual-v2 svg{width:100%;height:100%;overflow:visible}
-.brain-float{animation:brainFloat 5s ease-in-out infinite}
-.brain-scan{animation:brainScan 3.4s ease-in-out infinite}
-.brain-sparks{animation:brainSparks 2.2s ease-in-out infinite}
-.circuit-stream{animation:circuitStream 3s linear infinite}
-.route-flow{animation:routeFlow 7s linear infinite}
-.port-rings{animation:portRings 3s ease-in-out infinite}
-.cargo-plane{offset-path:path('M79 84 Q143 15 204 82 Q240 30 283 105');offset-rotate:auto;animation:cargoTravel 10s linear infinite}
-.cargo-ship{offset-path:path('M350 162 Q212 225 118 140 Q46 135 79 84');offset-rotate:0deg;animation:cargoTravel 16s linear infinite}
-.cargo-box{offset-path:path('M283 105 Q344 78 350 162');offset-rotate:0deg;animation:cargoTravel 7s linear infinite}
-@keyframes brainFloat{50%{transform:translateY(-5px)}}
-@keyframes brainScan{0%,100%{transform:translateY(0);opacity:0}15%,85%{opacity:1}90%{transform:translateY(150px)}}
-@keyframes brainSparks{50%{opacity:.3}}
-@keyframes circuitStream{to{stroke-dashoffset:-198}}
-@keyframes routeFlow{to{stroke-dashoffset:-184}}
-@keyframes portRings{0%,100%{opacity:.2}50%{opacity:.8}}
-@keyframes cargoTravel{from{offset-distance:0%}to{offset-distance:100%}}
-@media(prefers-reduced-motion:reduce){.cargo-plane{offset-distance:40%}.cargo-ship{offset-distance:35%}.cargo-box{offset-distance:65%}}
+/* Animated AI processor and international container transport. */
+.visual-v3 svg{width:100%;height:100%;overflow:visible}
+.cpu-data{animation:cpuData 3s linear infinite}
+.cpu-edge{animation:cpuEdge 3s ease-in-out infinite}
+.cpu-status{animation:cpuEdge 1.6s ease-in-out infinite}
+.cpu-scan{animation:cpuScan 4s linear infinite}
+.trade-route{animation:tradeRoute 9s linear infinite}
+.ocean-vessel{animation:vesselTravel 28s ease-in-out infinite alternate}
+.vessel-bob{animation:vesselBob 5s ease-in-out infinite;transform-origin:200px 170px}
+.ship-wake{animation:wakeDrift 3s linear infinite}
+.freight-jet{animation:jetTravel 19s linear infinite}
+.ocean-ripples{animation:seaDrift 7s ease-in-out infinite}
+@keyframes cpuData{to{stroke-dashoffset:-216}}
+@keyframes cpuEdge{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes cpuScan{0%{transform:translateY(0);opacity:0}15%,80%{opacity:1}100%{transform:translateY(86px);opacity:0}}
+@keyframes tradeRoute{to{stroke-dashoffset:-252}}
+@keyframes vesselTravel{0%{transform:translateX(-27px)}100%{transform:translateX(52px)}}
+@keyframes vesselBob{0%,100%{transform:translateY(0) rotate(-.3deg)}50%{transform:translateY(1.6px) rotate(.3deg)}}
+@keyframes wakeDrift{0%{transform:translateX(0);opacity:.2}50%{opacity:.8}100%{transform:translateX(-15px);opacity:.2}}
+@keyframes jetTravel{0%{transform:translate(39px,88px) scale(.62);opacity:0}7%{opacity:1}85%{opacity:1}100%{transform:translate(377px,40px) scale(.62);opacity:0}}
+@keyframes seaDrift{50%{transform:translateX(-9px);opacity:.5}}
+@media(prefers-reduced-motion:reduce){.freight-jet{transform:translate(244px,59px) scale(.62)}}
 
 </style>
 </head>
@@ -218,33 +221,50 @@ footer{color:#858b87}
 <section class="divisions" aria-label="Explore our business divisions">
 <a class="division tech" id="tech-link" href="https://jebg.jamilaexim.com/" data-name="JEBG AI Technologies">
 <div class="card-top"><span class="jebg-panel-brand"><b>JEBG</b><span>AI TECHNOLOGIES</span></span><span class="number">01 /</span></div>
-<div class="art live-art visual-v2" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
-<defs><radialGradient id="brain-halo"><stop stop-color="#43ddeb" stop-opacity=".23"/><stop offset="1" stop-color="#43ddeb" stop-opacity="0"/></radialGradient><linearGradient id="brain-fill" x1="140" y1="30" x2="280" y2="190" gradientUnits="userSpaceOnUse"><stop stop-color="#124d64"/><stop offset="1" stop-color="#0b2036"/></linearGradient><clipPath id="brain-clip"><path d="M208 46C185 23 155 37 153 59C127 57 114 83 126 103C103 120 118 150 140 151C139 178 169 193 190 177L208 189L226 177C249 193 278 178 277 151C302 147 313 121 292 103C304 81 290 57 266 59C261 35 232 24 212 46Z"/></clipPath></defs>
-<ellipse cx="210" cy="115" rx="155" ry="110" fill="url(#brain-halo)"/>
-<g class="brain-float"><path d="M208 46C185 23 155 37 153 59C127 57 114 83 126 103C103 120 118 150 140 151C139 178 169 193 190 177L208 189L226 177C249 193 278 178 277 151C302 147 313 121 292 103C304 81 290 57 266 59C261 35 232 24 212 46Z" fill="url(#brain-fill)" stroke="#5ee6f0" stroke-width="1.6"/>
-<g stroke="#4ad9eb" stroke-opacity=".65" stroke-width="1.2"><path d="M208 49V182M189 62H172V86H148M189 93H171V119H136M189 125H173V153H153M228 62H248V86H272M228 93H249V119H281M228 125H245V153H266M189 160V144M228 160V144"/></g>
-<g class="brain-sparks" fill="#c2fff4"><circle cx="172" cy="62" r="3"/><circle cx="171" cy="119" r="3"/><circle cx="173" cy="153" r="3"/><circle cx="248" cy="86" r="3"/><circle cx="249" cy="93" r="3"/><circle cx="245" cy="153" r="3"/></g>
-<g clip-path="url(#brain-clip)"><rect class="brain-scan" x="110" y="30" width="200" height="18" fill="#77f6e8" opacity=".15"/><path class="brain-scan" d="M110 48H310" stroke="#b6fff1" stroke-opacity=".7"/></g>
-<rect x="192" y="101" width="34" height="34" rx="7" fill="#071b28" stroke="#9cffe2"/><text x="209" y="123" text-anchor="middle" fill="#baffed" font-size="14" font-family="Manrope,Arial" font-weight="700">AI</text></g>
-<g stroke="#4ad9eb" stroke-opacity=".35"><path d="M123 81H89L72 64H42M119 130H76L59 146H26M145 169H101L82 190H49M294 81H329L346 64H378M298 130H344L361 146H394M273 169H319L338 190H371"/></g>
-<g class="circuit-stream" stroke="#a4fff0" stroke-width="2" stroke-dasharray="9 90"><path d="M42 64H72L89 81H123M26 146H59L76 130H119M49 190H82L101 169H145M378 64H346L329 81H294M394 146H361L344 130H298M371 190H338L319 169H273"/></g>
-<text x="210" y="225" text-anchor="middle" fill="#86bfcf" font-size="8" letter-spacing="3" font-family="Manrope,Arial">INTELLIGENCE IN MOTION</text></svg></div>
+<div class="art live-art visual-v3 cpu-visual" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
+<defs><linearGradient id="cpu-metal" x1="140" y1="60" x2="280" y2="180" gradientUnits="userSpaceOnUse"><stop stop-color="#638a9b"/><stop offset=".14" stop-color="#203d51"/><stop offset=".55" stop-color="#0a1b2c"/><stop offset="1" stop-color="#385d72"/></linearGradient><linearGradient id="cpu-die" x1="163" y1="75" x2="254" y2="162" gradientUnits="userSpaceOnUse"><stop stop-color="#1d627a"/><stop offset=".5" stop-color="#0b2b43"/><stop offset="1" stop-color="#143f50"/></linearGradient><radialGradient id="cpu-aura"><stop stop-color="#4ad9eb" stop-opacity=".25"/><stop offset="1" stop-color="#4ad9eb" stop-opacity="0"/></radialGradient><clipPath id="die-clip"><rect x="165" y="79" width="90" height="82" rx="5"/></clipPath></defs>
+<ellipse cx="210" cy="120" rx="170" ry="110" fill="url(#cpu-aura)"/>
+<g stroke="#397083" stroke-width="1"><path d="M20 60H65L83 78H125M295 78H337L355 60H400"/><path d="M20 82H73L91 100H125M295 100H329L347 82H400"/><path d="M20 104H81L99 122H125M295 122H321L339 104H400"/><path d="M20 126H89L107 144H125M295 144H313L331 126H400"/><path d="M20 148H97L115 166H125M295 166H305L323 148H400"/></g><g class="cpu-data" stroke="#93ffee" stroke-width="2" stroke-dasharray="8 100"><path d="M20 60H65L83 78H125M295 78H337L355 60H400"/><path d="M20 82H73L91 100H125M295 100H329L347 82H400"/><path d="M20 104H81L99 122H125M295 122H321L339 104H400"/><path d="M20 126H89L107 144H125M295 144H313L331 126H400"/><path d="M20 148H97L115 166H125M295 166H305L323 148H400"/></g>
+<g stroke="#6c9eac" stroke-width="5"><path d="M151 60V43M151 180V197M142 64H125M278 64H295"/><path d="M164 60V43M164 180V197M142 76H125M278 76H295"/><path d="M177 60V43M177 180V197M142 88H125M278 88H295"/><path d="M190 60V43M190 180V197M142 100H125M278 100H295"/><path d="M203 60V43M203 180V197M142 112H125M278 112H295"/><path d="M216 60V43M216 180V197M142 124H125M278 124H295"/><path d="M229 60V43M229 180V197M142 136H125M278 136H295"/><path d="M242 60V43M242 180V197M142 148H125M278 148H295"/><path d="M255 60V43M255 180V197M142 160H125M278 160H295"/><path d="M268 60V43M268 180V197M142 172H125M278 172H295"/></g><g stroke="#a4e4db" stroke-width="1"><path d="M151 60V43M151 180V197M142 64H125M278 64H295"/><path d="M164 60V43M164 180V197M142 76H125M278 76H295"/><path d="M177 60V43M177 180V197M142 88H125M278 88H295"/><path d="M190 60V43M190 180V197M142 100H125M278 100H295"/><path d="M203 60V43M203 180V197M142 112H125M278 112H295"/><path d="M216 60V43M216 180V197M142 124H125M278 124H295"/><path d="M229 60V43M229 180V197M142 136H125M278 136H295"/><path d="M242 60V43M242 180V197M142 148H125M278 148H295"/><path d="M255 60V43M255 180V197M142 160H125M278 160H295"/><path d="M268 60V43M268 180V197M142 172H125M278 172H295"/></g>
+<rect x="142" y="64" width="136" height="120" rx="10" fill="#020c13" opacity=".8"/>
+<rect x="142" y="60" width="136" height="120" rx="10" fill="url(#cpu-metal)" stroke="#709bac"/>
+<rect x="151" y="69" width="118" height="102" rx="6" fill="#091c2a" stroke="#3e697c"/>
+<rect class="cpu-edge" x="158" y="73" width="104" height="94" rx="7" stroke="#72f7e8" stroke-width="1.3"/>
+<rect x="165" y="79" width="90" height="82" rx="5" fill="url(#cpu-die)" stroke="#4ad9eb" stroke-opacity=".6"/>
+<g stroke="#70c9d2" stroke-opacity=".2" stroke-width=".6"><path d="M173 86H247M173 94H247M173 146H247M173 154H247M174 86V154M182 86V154M238 86V154M246 86V154"/></g>
+<g clip-path="url(#die-clip)"><rect class="cpu-scan" x="165" y="75" width="90" height="15" fill="#a4fff0" opacity=".18"/></g>
+<text x="210" y="128" text-anchor="middle" fill="#d0fff5" font-size="29" font-weight="700" font-family="Manrope,Arial">AI</text>
+<text x="210" y="146" text-anchor="middle" fill="#83c5d6" font-size="6" letter-spacing="2" font-family="Manrope,Arial">NEURAL PROCESSOR</text>
+<circle cx="151" cy="169" r="2" fill="#c0fff0"/><g class="cpu-status" fill="#9bffda"><circle cx="172" cy="174" r="1.4"/><circle cx="179" cy="174" r="1.4"/><circle cx="186" cy="174" r="1.4"/></g>
+<text x="210" y="225" text-anchor="middle" fill="#86bfcf" font-size="8" letter-spacing="3" font-family="Manrope,Arial">POWERED BY INTELLIGENCE</text></svg></div>
 <div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Industrial AI, engineering intelligence, and business automation. Explore JEBG products and consultancy.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="division exports" id="exports-link" href="https://jamilaexim.linker.store/" data-name="International Exports">
 <div class="card-top"><span>Trade beyond borders</span><span class="number">02 /</span></div>
-<div class="art live-art visual-v2 trade-visual" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
-<defs><linearGradient id="map-fill" x1="30" y1="50" x2="390" y2="180" gradientUnits="userSpaceOnUse"><stop stop-color="#89703e" stop-opacity=".4"/><stop offset="1" stop-color="#d9bb80" stop-opacity=".12"/></linearGradient></defs>
-<g stroke="#d9bb80" stroke-opacity=".09"><path d="M25 60H395M25 100H395M25 140H395M25 180H395M70 35V205M140 35V205M210 35V205M280 35V205M350 35V205"/></g>
-<g fill="url(#map-fill)" stroke="#d9bb80" stroke-opacity=".45" stroke-linejoin="round"><path d="M35 65L56 48L90 43L119 55L137 76L119 88L101 87L92 108L77 109L62 91L48 91Z"/><path d="M96 112L119 115L137 136L126 160L111 188L103 166L105 145L93 128Z"/><path d="M164 49L181 43L187 56L175 72L161 64Z"/><path d="M184 78L196 57L224 48L246 60L265 50L302 46L344 57L376 77L365 91L336 97L323 119L307 122L286 101L272 114L255 96L233 93L218 82L203 91Z"/><path d="M190 98L216 95L239 111L231 137L216 160L204 151L198 129L183 116Z"/><path d="M316 153L339 143L365 156L369 176L345 180L322 173Z"/><path d="M286 129L305 136L325 133L337 140L309 145Z"/></g>
-<g stroke="#e7c77e" stroke-opacity=".25" stroke-dasharray="3 5"><path d="M79 84Q143 15 204 82"/><path d="M204 82Q240 30 283 105"/><path d="M283 105Q344 78 350 162"/><path d="M350 162Q212 225 118 140"/><path d="M118 140Q46 135 79 84"/></g>
-<g class="route-flow" stroke="#f1d897" stroke-width="1.4" stroke-dasharray="7 85"><path d="M79 84Q143 15 204 82"/><path d="M204 82Q240 30 283 105"/><path d="M283 105Q344 78 350 162"/><path d="M350 162Q212 225 118 140"/><path d="M118 140Q46 135 79 84"/></g>
-<g fill="#ffe3a3"><circle cx="79" cy="84" r="3"/><circle cx="204" cy="82" r="3"/><circle cx="283" cy="105" r="3"/><circle cx="350" cy="162" r="3"/><circle cx="118" cy="140" r="3"/></g>
-<g class="port-rings" stroke="#ffe3a3"><circle cx="79" cy="84" r="8"/><circle cx="204" cy="82" r="8"/><circle cx="283" cy="105" r="8"/><circle cx="350" cy="162" r="8"/><circle cx="118" cy="140" r="8"/></g>
-<g class="cargo-plane"><path d="M-10 0L-3-2L0-9L3-9L3-2L11 0L11 2L3 2L2 7L-1 7L-2 2L-10 2Z" fill="#fff0cc"/></g>
-<g class="cargo-ship"><path d="M-12 0H13L8 7H-7Z" fill="#f3d18c"/><path d="M-8-6H-1V-1H-8ZM1-6H8V-1H1Z" fill="#d9bb80"/><path d="M-13 10Q-9 7-5 10T3 10T11 10" stroke="#e7c77e" stroke-opacity=".6"/></g>
-<g class="cargo-box"><rect x="-5" y="-5" width="10" height="10" rx="1" fill="#f1d897"/><path d="M0-5V5M-3-2H3" stroke="#766039"/></g>
-<text x="210" y="225" text-anchor="middle" fill="#c7b68d" font-size="8" letter-spacing="2.5" font-family="Manrope,Arial">GLOBAL TRADE · ALWAYS MOVING</text></svg></div>
+<div class="art live-art visual-v3 trade-realistic" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
+<defs><linearGradient id="sea-fill" x1="0" y1="137" x2="0" y2="218" gradientUnits="userSpaceOnUse"><stop stop-color="#31505b" stop-opacity=".5"/><stop offset="1" stop-color="#142a31" stop-opacity=".05"/></linearGradient><linearGradient id="ship-hull" x1="100" y1="155" x2="100" y2="185" gradientUnits="userSpaceOnUse"><stop stop-color="#526c78"/><stop offset=".45" stop-color="#263f50"/><stop offset=".5" stop-color="#834e3e"/><stop offset="1" stop-color="#3c3030"/></linearGradient><linearGradient id="jet-body"><stop stop-color="#eff0e6"/><stop offset=".6" stop-color="#bccbd0"/><stop offset="1" stop-color="#6b8796"/></linearGradient></defs>
+<!-- Global connections above the working seaport. -->
+<g fill="#77918a" fill-opacity=".14" stroke="#b9c8ad" stroke-opacity=".15" stroke-width=".6"><path d="M39 51L54 35L80 33L103 44L118 62L102 73L85 70L78 88L63 82L51 66Z"/><path d="M82 89L103 93L114 111L100 137L90 123L91 106Z"/><path d="M158 57L172 40L196 36L213 47L236 37L271 39L309 50L337 64L325 76L299 76L286 95L268 93L249 76L231 89L214 72L191 68L179 77Z"/><path d="M166 80L189 77L210 91L203 114L188 133L177 116L174 98Z"/><path d="M288 112L309 106L330 117L327 135L302 135Z"/></g>
+<g stroke="#e7c77e" stroke-opacity=".27" stroke-dasharray="3 5"><path d="M73 62Q139 0 187 64T286 75M187 64Q228 15 286 75M100 107Q194 157 309 124"/></g>
+<g class="trade-route" stroke="#f1d897" stroke-width="1.4" stroke-dasharray="6 120"><path d="M73 62Q139 0 187 64T286 75M187 64Q228 15 286 75M100 107Q194 157 309 124"/></g>
+<!-- Distant container terminal and cranes. -->
+<g stroke="#9b9f89" stroke-opacity=".42" stroke-width="1.2"><path d="M319 145V86H374M325 145V92H368M313 97L340 78H379M340 78V145M367 86V118M364 118H370M348 145V102H401M354 145V108H397M347 112L369 96H405M369 96V145M394 102V127"/></g>
+<g fill="#7c7e65" opacity=".4"><rect x="332" y="131" width="23" height="10"/><rect x="357" y="131" width="23" height="10"/><rect x="345" y="120" width="23" height="10"/><path d="M304 145H408V150H304Z"/></g>
+<path d="M15 148H408V213H15Z" fill="url(#sea-fill)"/><path d="M18 148H409" stroke="#9eb7b5" stroke-opacity=".2"/>
+<!-- Detailed container vessel, with bridge, stacked freight, and moving wake. -->
+<g class="ocean-vessel">
+<g class="ship-wake" stroke="#c3d9d2" stroke-opacity=".4" stroke-width="1"><path d="M52 181Q73 178 99 181M42 187Q76 184 112 187M59 193Q89 190 129 193"/></g>
+<g class="vessel-bob">
+<path d="M94 157L112 157L119 176Q195 184 277 174L294 154L275 158Z" fill="url(#ship-hull)" stroke="#9bb2b7" stroke-opacity=".4" stroke-width=".7"/>
+<path d="M99 161L285 161M119 175Q192 181 276 173" stroke="#c2b28f" stroke-opacity=".5" stroke-width=".7"/>
+<rect x="122" y="142" width="19" height="15" rx="1" fill="#b87543" stroke="#1b3037" stroke-width=".6"/><path d="M126 144V155M130 144V155M134 144V155M138 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="142" y="142" width="19" height="15" rx="1" fill="#547775" stroke="#1b3037" stroke-width=".6"/><path d="M146 144V155M150 144V155M154 144V155M158 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="162" y="142" width="19" height="15" rx="1" fill="#b49a59" stroke="#1b3037" stroke-width=".6"/><path d="M166 144V155M170 144V155M174 144V155M178 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="182" y="142" width="19" height="15" rx="1" fill="#506981" stroke="#1b3037" stroke-width=".6"/><path d="M186 144V155M190 144V155M194 144V155M198 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="202" y="142" width="19" height="15" rx="1" fill="#b87543" stroke="#1b3037" stroke-width=".6"/><path d="M206 144V155M210 144V155M214 144V155M218 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="222" y="142" width="19" height="15" rx="1" fill="#547775" stroke="#1b3037" stroke-width=".6"/><path d="M226 144V155M230 144V155M234 144V155M238 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="242" y="142" width="19" height="15" rx="1" fill="#b49a59" stroke="#1b3037" stroke-width=".6"/><path d="M246 144V155M250 144V155M254 144V155M258 144V155" stroke="#192b31" stroke-opacity=".45" stroke-width=".7"/><rect x="142" y="129" width="19" height="12" rx="1" fill="#718e8b" stroke="#233942" stroke-width=".7"/><path d="M146 131V139M152 131V139M157 131V139" stroke="#203139" stroke-opacity=".4"/><rect x="162" y="129" width="19" height="12" rx="1" fill="#bb945d" stroke="#233942" stroke-width=".7"/><path d="M166 131V139M172 131V139M177 131V139" stroke="#203139" stroke-opacity=".4"/><rect x="182" y="129" width="19" height="12" rx="1" fill="#506981" stroke="#233942" stroke-width=".7"/><path d="M186 131V139M192 131V139M197 131V139" stroke="#203139" stroke-opacity=".4"/><rect x="202" y="129" width="19" height="12" rx="1" fill="#718e8b" stroke="#233942" stroke-width=".7"/><path d="M206 131V139M212 131V139M217 131V139" stroke="#203139" stroke-opacity=".4"/><rect x="222" y="129" width="19" height="12" rx="1" fill="#bb945d" stroke="#233942" stroke-width=".7"/><path d="M226 131V139M232 131V139M237 131V139" stroke="#203139" stroke-opacity=".4"/>
+<path d="M106 137H122V155H103V144H106Z" fill="#d5d6c8"/><path d="M106 136V126H119V137Z" fill="#b5c5c6"/><path d="M107 128H118V132H107Z" fill="#294957"/><path d="M104 143H119M104 147H119" stroke="#728a90" stroke-width="1"/><path d="M111 126V118M107 120H119" stroke="#a7b6b2" stroke-width=".8"/><rect x="127" y="133" width="9" height="9" fill="#6d6053"/><path d="M130 133V126H134V133" fill="#9f9c86"/>
+<path d="M99 155H290M279 157V150M286 155V148" stroke="#c1c2b1" stroke-width=".7"/><circle cx="273" cy="164" r="1.6" stroke="#d9c694" stroke-width=".6"/>
+</g></g>
+<!-- Swept-wing cargo jet passing above the international terminal. -->
+<g class="freight-jet"><path d="M-26 1Q-17-3 22-3L30 0L23 3L-26 4L-31 1Z" fill="url(#jet-body)"/><path d="M-3 0L-15-18L-9-18L11 0L-6 3L-17 17L-22 17L-14 2Z" fill="#b7c5c7"/><path d="M-22 0L-28-10H-23L-14 1M-23 3L-29 10H-24L-16 3" fill="#96aaaf"/><path d="M20-2L24 0H19" fill="#345566"/><path d="M-9-8H-2M-13 9H-6" stroke="#6d8997" stroke-width="3"/><path d="M-19 0H15" stroke="#d7ba7d" stroke-width=".8"/></g>
+<g class="ocean-ripples" stroke="#a1c3c2" stroke-opacity=".22"><path d="M25 199h45m17 0h59m20 0h46m17 0h70m17 0h65M50 207h53m19 0h70m18 0h52m18 0h63"/></g>
+<text x="210" y="231" text-anchor="middle" fill="#c7b68d" font-size="8" letter-spacing="2.5" font-family="Manrope,Arial">CONNECTING MARKETS WORLDWIDE</text></svg></div>
 <div class="division-content"><div class="category">Global commerce & trade</div><h2>International Exports</h2><p class="description">Discover our export business, explore our products, and connect with Jamila Exim for international trade.</p><div class="card-action"><span>Explore International Exports</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 </section>
