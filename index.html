@@ -18,6 +18,84 @@ footer{max-width:1440px;margin:auto;padding:25px 6% 28px;display:flex;justify-co
 @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.35}}@keyframes loading{from{transform:translateX(-110%)}to{transform:translateX(180%)}}
 @media(min-width:1500px){main{padding-top:65px}.division{min-height:520px}}@media(max-width:760px){header{padding:22px 6%}.header-note{font-size:8px;letter-spacing:.1em}.brand strong{font-size:14px}.brand small{font-size:7px}.monogram{width:36px;height:36px;font-size:25px}main{padding-top:30px}.intro{display:block;margin-bottom:29px}.intro-copy{max-width:340px;margin-top:22px;font-size:12px}h1{font-size:47px}.divisions{grid-template-columns:1fr;gap:16px}.division{min-height:425px;padding:25px}.division-content{padding-top:170px}h2{font-size:34px}.art{inset:45px 0 120px}.below{align-items:flex-start;line-height:1.6;font-size:9px}.below span:last-child{max-width:115px}footer{font-size:8px;line-height:1.7}.footer-tag{max-width:120px;text-align:right}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.division:hover,.division:hover .art{transform:none}}
+
+/* Compact viewport layout; allow natural scrolling at high zoom or very short heights. */
+body{min-height:100svh;display:flex;flex-direction:column}
+header,main,footer{width:100%;margin-left:auto;margin-right:auto}
+header{padding-top:18px;padding-bottom:18px}
+main{flex:1;display:flex;flex-direction:column;padding-top:12px;padding-bottom:0}
+.intro{margin-bottom:22px;gap:24px}
+.eyebrow{margin-bottom:12px}
+h1{font-size:clamp(32px,3.5vw,50px)}
+.intro-copy{font-size:12px;line-height:1.65;max-width:290px}
+.divisions{flex:1;min-height:280px}
+.division{min-height:280px;padding:22px 28px}
+.division-content{padding-top:110px}
+.art{inset:30px 0 auto;height:150px}
+h2{font-size:clamp(25px,2.4vw,34px);margin-bottom:8px}
+.category{margin-bottom:9px}
+.description{margin-bottom:15px;line-height:1.6}
+.card-action{padding-top:12px}
+.below{padding:13px 0;line-height:1.6}
+.below br{display:none}
+.below strong{margin-right:8px}
+footer{padding-top:14px;padding-bottom:14px}
+@media(min-width:761px) and (min-height:650px){
+body{height:100svh}
+main{min-height:0}
+.divisions{min-height:0}
+.division{min-height:0}
+.art{height:clamp(120px,22vh,250px);top:32px}
+.division-content{padding-top:120px}
+}
+@media(max-width:760px){
+header{padding:14px 5%;gap:12px}
+.header-note{display:none}
+main{padding:8px 5% 0}
+.intro{margin-bottom:16px}
+.eyebrow{font-size:9px;margin-bottom:9px}
+h1{font-size:clamp(28px,7.5vw,38px)}
+.intro-copy{font-size:11px;line-height:1.5;margin:10px 0 0;max-width:100%}
+.divisions{grid-template-columns:1fr;gap:10px;min-height:0}
+.division{min-height:165px;padding:16px 18px;justify-content:space-between}
+.division-content{padding-top:16px;padding-right:0}
+.art{inset:23px 8px auto auto;width:110px;height:95px;opacity:.32}
+.card-top span{font-size:8px;letter-spacing:.1em}
+.category{font-size:8px;margin-bottom:6px}
+h2{font-size:26px;margin-bottom:8px}
+.description{display:none}
+.card-action{font-size:11px;padding-top:9px}
+.arrow{width:28px;height:28px}
+.below{padding:11px 0;font-size:9px}
+.below span:first-child{line-height:1.5}
+.below span:last-child{display:none}
+footer{padding:11px 5%;font-size:8px;line-height:1.5}
+.footer-tag{max-width:135px}
+}
+@media(max-height:700px) and (min-width:761px){
+header{padding-top:12px;padding-bottom:12px}
+main{padding-top:4px}
+.intro{margin-bottom:16px}
+h1{font-size:34px}
+.division{min-height:250px;padding:18px 24px}
+.division-content{padding-top:70px}
+.art{height:115px;top:22px}
+.description{margin-bottom:10px}
+.below{padding:10px 0}
+footer{padding-top:10px;padding-bottom:10px}
+}
+@media(max-width:760px) and (max-height:700px){
+.brand small{display:none}
+.monogram{width:30px;height:30px;font-size:22px}
+header{padding-top:10px;padding-bottom:10px}
+.intro-copy{display:none}
+h1{font-size:29px}
+.division{min-height:145px;padding:13px 16px}
+.division-content{padding-top:10px}
+.below{display:none}
+footer{padding-top:10px;padding-bottom:10px}
+}
+
 </style>
 </head>
 <body>
