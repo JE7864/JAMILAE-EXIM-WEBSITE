@@ -296,6 +296,31 @@ footer{color:#809ba7}.footer-tag{color:#afc3cc}
 }
 @media(max-width:380px){.exports .category,.exports h2{padding-right:80px}}
 
+
+/* Central AI processor connected to three compact industrial systems. */
+.ai-integration-hub svg{width:100%;height:100%}
+.hub-data-stream{animation:hubData 2.2s linear infinite}
+.hub-core-pulse{animation:hubCore 2.8s ease-in-out infinite}
+.hub-control-trend{stroke-dasharray:85;animation:hubTrend 3.4s linear infinite}
+.hub-status{animation:hubCore 2s ease-in-out infinite}
+.hub-process-flow{animation:hubProcessFlow 2.4s linear infinite}
+.hub-reactor-bubbles{animation:hubBubbles 2.8s linear infinite}
+.hub-pump{transform-origin:426px 141px;animation:hubPump 2s linear infinite}
+.hub-inspection-belt{animation:hubInspectionBelt 2s linear infinite}
+.hub-vision-beam{animation:hubBeam 3s ease-in-out infinite}
+.hub-vision-lock{animation:hubLock 3s ease-in-out infinite}
+@keyframes hubData{to{stroke-dashoffset:-40}}
+@keyframes hubCore{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes hubTrend{0%{stroke-dashoffset:85}85%,100%{stroke-dashoffset:0}}
+@keyframes hubProcessFlow{to{stroke-dashoffset:-28}}
+@keyframes hubBubbles{0%{transform:translateY(8px);opacity:0}20%,70%{opacity:1}100%{transform:translateY(-19px);opacity:0}}
+@keyframes hubPump{to{transform:rotate(360deg)}}
+@keyframes hubInspectionBelt{to{stroke-dashoffset:-20}}
+@keyframes hubBeam{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes hubLock{0%,20%,100%{opacity:.3}40%,80%{opacity:1}}
+@media(max-width:760px){.tech .live-art{width:175px;height:115px;right:3px;top:29px}.tech .division-content{padding-right:135px}.tech .card-action{width:calc(100% + 135px)}.tech h2{font-size:clamp(19px,4.8vw,25px)}}
+@media(max-width:380px){.tech .live-art{width:140px}.tech .division-content{padding-right:105px}.tech .card-action{width:calc(100% + 105px)}}
+
 </style>
 </head>
 <body>
@@ -305,69 +330,50 @@ footer{color:#809ba7}.footer-tag{color:#afc3cc}
 <section class="divisions" aria-label="Explore our business divisions">
 <a class="division tech" id="tech-link" href="https://jebg.jamilaexim.com/" data-name="JEBG AI Technologies">
 <div class="card-top"><span class="jebg-panel-brand"><b>JEBG</b><span>AI TECHNOLOGIES</span></span><span class="number">01 /</span></div>
-<div class="art live-art visual-v3 process-plant" aria-hidden="true"><svg viewBox="0 0 500 240" fill="none">
-<defs>
-<linearGradient id="cpu-metal" x1="69" y1="29" x2="126" y2="77" gradientUnits="userSpaceOnUse"><stop stop-color="#749da8"/><stop offset=".22" stop-color="#274b63"/><stop offset=".65" stop-color="#0c2237"/><stop offset="1" stop-color="#46758c"/></linearGradient><linearGradient id="cpu-die" x1="78" y1="37" x2="117" y2="69" gradientUnits="userSpaceOnUse"><stop stop-color="#1c687c"/><stop offset=".6" stop-color="#123c54"/><stop offset="1" stop-color="#21575d"/></linearGradient>
-<linearGradient id="plant-steel" x1="0" x2="1"><stop stop-color="#78bdcf"/><stop offset=".25" stop-color="#d5f0ee"/><stop offset=".5" stop-color="#f2fffa"/><stop offset=".75" stop-color="#aad6dc"/><stop offset="1" stop-color="#66a5bc"/></linearGradient>
-<linearGradient id="plant-liquid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7effcc"/><stop offset="1" stop-color="#15c9b2"/></linearGradient>
-<clipPath id="reactor-window"><rect x="168" y="94" width="44" height="74" rx="13"/></clipPath>
-</defs><g transform="translate(80 0)">
-<!-- Foundations, process pipework, and working platforms. -->
-<path d="M30 204H392" stroke="#c7f3f1" stroke-opacity=".45" stroke-width="2"/>
-<path d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#073c57" stroke-opacity=".4" stroke-width="9" stroke-linejoin="round"/>
-<path d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#b7e8e9" stroke-width="5" stroke-linejoin="round"/>
-<path class="plant-flow" d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#71ffd4" stroke-width="2.6" stroke-dasharray="7 15" stroke-linejoin="round"/>
-<!-- Feed storage vessel. -->
-<path d="M42 104V181M101 104V181" stroke="#164d6b" stroke-width="4"/><rect x="40" y="94" width="64" height="81" rx="7" fill="url(#plant-steel)" stroke="#e6fffa"/><ellipse cx="72" cy="94" rx="32" ry="9" fill="#b9e6e8" stroke="#edfff8"/><ellipse cx="72" cy="174" rx="31" ry="7" fill="#7fb8c9"/><rect x="52" y="114" width="40" height="36" rx="3" fill="#0e7590" fill-opacity=".65"/><path d="M57 142H87M57 135H76" stroke="#9afae1" stroke-width="2"/><text x="72" y="125" text-anchor="middle" fill="#e6fffa" font-size="6" font-family="Arial" letter-spacing="1">FEED</text>
-<!-- Stirred process reactor with visible circulating product. -->
-<path d="M163 173V202M217 173V202" stroke="#265e79" stroke-width="5"/>
-<rect x="157" y="77" width="66" height="103" rx="25" fill="url(#plant-steel)" stroke="#eafff7"/>
-<ellipse cx="190" cy="78" rx="31" ry="12" fill="#c9edf0" stroke="#f1fffb"/>
-<path d="M190 50V73" stroke="#e4fffa" stroke-width="4"/><rect x="178" y="39" width="24" height="15" rx="3" fill="#1c5b7b" stroke="#b4fff0"/><path d="M183 42V51M188 42V51M193 42V51M198 42V51" stroke="#75b7c9"/>
-<rect x="168" y="94" width="44" height="74" rx="13" fill="#076080" stroke="#76bcc8"/>
-<g clip-path="url(#reactor-window)"><rect class="reactor-liquid" x="168" y="111" width="44" height="66" fill="url(#plant-liquid)" opacity=".78"/><g class="reactor-bubbles" stroke="#e0fff3" fill="#cbffec" fill-opacity=".3"><circle cx="177" cy="153" r="3"/><circle cx="199" cy="143" r="2.5"/><circle cx="185" cy="130" r="2"/><circle cx="204" cy="165" r="2"/></g><path d="M190 95V157" stroke="#e3fff5" stroke-width="2"/><g class="agitator"><path d="M176 135L204 143M176 143L204 135M178 151H202" stroke="#e7fff3" stroke-width="2.3"/></g></g>
-<rect x="175" y="81" width="30" height="8" rx="2" fill="#0e718d"/><text x="190" y="87" text-anchor="middle" fill="#bffff0" font-size="5" font-family="Arial" letter-spacing=".5">REACTOR</text>
-<!-- Fractionation column, service ladder, and condenser. -->
-<path d="M279 183V202M300 183V202" stroke="#235b75" stroke-width="4"/><rect x="273" y="49" width="34" height="139" rx="15" fill="url(#plant-steel)" stroke="#e4fff7"/>
-<path d="M275 76H305M275 99H305M275 122H305M275 145H305M275 168H305" stroke="#659eb3" stroke-width="2"/>
-<path d="M312 65V192M319 65V192M312 77H319M312 90H319M312 103H319M312 116H319M312 129H319M312 142H319M312 155H319M312 168H319M312 181H319" stroke="#c0e9e8" stroke-width="1.2"/>
-<path d="M289 49V30H347V67" stroke="#c1efea" stroke-width="5" stroke-linejoin="round"/><path class="plant-flow" d="M289 49V30H347V67" stroke="#8affdc" stroke-width="2" stroke-dasharray="6 12"/>
-<rect x="330" y="66" width="37" height="48" rx="6" fill="url(#plant-steel)" stroke="#d8fff4"/><path d="M338 75V105M345 75V105M352 75V105M359 75V105" stroke="#6da6b8" stroke-width="2"/><path d="M348 114V135H367V190H333V140" stroke="#c6f4ee" stroke-width="4" stroke-linejoin="round"/>
-<!-- Product pump and live process instruments. -->
-<circle cx="253" cy="176" r="11" fill="#1c7691" stroke="#b8ffeb" stroke-width="2"/><g class="plant-pump"><path d="M247 171L258 176L247 181Z" fill="#a4ffe2"/></g>
-<g class="plant-indicators" fill="#a3ffba"><circle cx="137" cy="77" r="3"/><circle cx="250" cy="110" r="3"/><circle cx="300" cy="137" r="3"/></g>
-
-<!-- AI processor supervises the plant through live telemetry links. -->
-<g class="plant-ai-links" stroke="#6de9e1" stroke-opacity=".35" stroke-width="1.2" stroke-linejoin="round"><path d="M133 48H149V20H190V39M133 63H145V87H157M101 84V94M133 35H143V13H264V48H273"/></g>
-<g class="plant-ai-signals" stroke="#a1ffdd" stroke-width="2" stroke-dasharray="5 32" stroke-linejoin="round"><path d="M133 48H149V20H190V39M133 63H145V87H157M101 84V94M133 35H143V13H264V48H273"/></g>
-<g class="integrated-ai-cpu">
-<g stroke="#91c8cd" stroke-width="3"><path d="M77 29V22M77 77V84M69 36H62M126 36H133"/><path d="M85 29V22M85 77V84M69 43H62M126 43H133"/><path d="M93 29V22M93 77V84M69 50H62M126 50H133"/><path d="M101 29V22M101 77V84M69 57H62M126 57H133"/><path d="M109 29V22M109 77V84M69 64H62M126 64H133"/><path d="M117 29V22M117 77V84M69 71H62M126 71H133"/></g>
-<rect x="69" y="29" width="57" height="48" rx="6" fill="url(#cpu-metal)" stroke="#91d1dc"/>
-<rect x="74" y="34" width="47" height="38" rx="4" fill="#091e30" stroke="#447b8e"/>
-<rect class="integrated-cpu-edge" x="78" y="37" width="39" height="32" rx="3" fill="url(#cpu-die)" stroke="#82ffdf"/>
-<path d="M81 40H114M81 65H114M82 41V64M112 41V64" stroke="#7ed8d8" stroke-opacity=".28" stroke-width=".7"/>
-<text x="97.5" y="58" text-anchor="middle" fill="#d2fff4" font-size="16" font-weight="700" font-family="Manrope,Arial">AI</text>
-<g class="cpu-status" fill="#9bffcd"><circle cx="79" cy="73" r="1"/><circle cx="84" cy="73" r="1"/><circle cx="89" cy="73" r="1"/></g>
-<text x="98" y="18" text-anchor="middle" fill="#a9f9e6" font-size="5.5" letter-spacing="1" font-family="Manrope,Arial">AI PROCESSOR</text>
-</g>
-
-</g>
-<!-- Compact control room supervising the AI-connected process plant. -->
-<g class="control-room">
-<path d="M101 126H119V53H142" stroke="#7de5df" stroke-opacity=".45" stroke-width="1.2"/><path class="control-link" d="M101 126H119V53H142" stroke="#adffe7" stroke-width="1.7" stroke-dasharray="5 20"/>
-<rect x="8" y="99" width="101" height="104" rx="7" fill="#102e40" stroke="#5294a6" stroke-width="1.2"/>
-<path d="M8 115H109" stroke="#44798d"/><circle cx="17" cy="108" r="2" fill="#82f6ce"/><text x="63" y="110" text-anchor="middle" fill="#b1e7e9" font-size="6" letter-spacing="1" font-family="Manrope,Arial">CONTROL ROOM</text>
-<rect x="15" y="122" width="41" height="28" rx="2" fill="#061b2b" stroke="#5795aa"/><rect x="61" y="122" width="41" height="28" rx="2" fill="#061b2b" stroke="#5795aa"/>
-<path class="control-trend" d="M19 141H25L29 132L34 143L40 128L44 136H51" stroke="#82ffe0" stroke-width="1.3" stroke-linejoin="round"/>
-<g stroke="#4f99ae" stroke-width=".8"><path d="M67 129H94M67 135H94M67 141H94"/><path d="M72 127V144M82 127V144M92 127V144"/></g>
-<g class="control-lights" fill="#8bffca"><circle cx="72" cy="129" r="2"/><circle cx="82" cy="135" r="2"/><circle cx="92" cy="141" r="2"/></g>
-<path d="M35 151V157M81 151V157" stroke="#8bbdc7" stroke-width="2"/><path d="M19 157H97L103 168H13Z" fill="#326378" stroke="#7fbdc7"/><path d="M13 169H103V175H13Z" fill="#1a4259"/>
-<path d="M23 175V198M94 175V198" stroke="#789eae" stroke-width="3"/>
-<rect x="34" y="161" width="21" height="3" rx="1" fill="#9ec7cf"/><circle cx="80" cy="162" r="2" fill="#9ec7cf"/>
-<!-- Operator at the supervision desk. -->
-<circle cx="60" cy="167" r="6" fill="#b9d8df"/><path d="M48 189V180Q48 173 60 173Q72 173 72 180V189" fill="#3c92a4" stroke="#80c6d2"/><rect x="48" y="182" width="24" height="13" rx="5" fill="#173951" stroke="#5d94aa"/><path d="M60 195V201M49 202H71" stroke="#7cabb9" stroke-width="2"/>
-</g>
-<text x="250" y="228" text-anchor="middle" fill="#c9fff2" font-size="8" letter-spacing="2.2" font-family="Manrope,Arial">AI · CONTROL · PROCESS AUTOMATION</text></svg></div>
+<div class="art live-art visual-v3 ai-integration-hub" aria-hidden="true"><svg viewBox="0 0 500 240" fill="none">
+<defs><linearGradient id="hub-chip-metal" x1="212" y1="75" x2="288" y2="145" gradientUnits="userSpaceOnUse"><stop stop-color="#82abb8"/><stop offset=".2" stop-color="#31576f"/><stop offset=".65" stop-color="#102b40"/><stop offset="1" stop-color="#548896"/></linearGradient><linearGradient id="hub-chip-die"><stop stop-color="#206b7d"/><stop offset="1" stop-color="#0c304b"/></linearGradient><linearGradient id="hub-plant-steel"><stop stop-color="#629aad"/><stop offset=".45" stop-color="#d5f0eb"/><stop offset="1" stop-color="#71afbf"/></linearGradient><radialGradient id="hub-glow"><stop stop-color="#62e9db" stop-opacity=".2"/><stop offset="1" stop-color="#62e9db" stop-opacity="0"/></radialGradient><clipPath id="hub-reactor-window"><rect x="393" y="98" width="16" height="36" rx="5"/></clipPath></defs>
+<ellipse cx="250" cy="110" rx="100" ry="91" fill="url(#hub-glow)"/>
+<!-- One central processor, three connected industrial capabilities. -->
+<g stroke="#72c8d4" stroke-opacity=".3" stroke-width="1.2"><path d="M202 110H149M298 110H344M250 155V176"/></g>
+<g class="hub-data-stream" stroke="#a7ffe5" stroke-width="2" stroke-dasharray="5 15"><path d="M149 110H202M298 110H344M250 155V176"/></g>
+<g class="hub-chip"><g stroke="#8ec8cc" stroke-width="3"><path d="M223 75V65M223 145V155M212 82H202M288 82H298"/><path d="M232 75V65M232 145V155M212 91H202M288 91H298"/><path d="M241 75V65M241 145V155M212 100H202M288 100H298"/><path d="M250 75V65M250 145V155M212 109H202M288 109H298"/><path d="M259 75V65M259 145V155M212 118H202M288 118H298"/><path d="M268 75V65M268 145V155M212 127H202M288 127H298"/><path d="M277 75V65M277 145V155M212 136H202M288 136H298"/></g>
+<rect x="212" y="78" width="76" height="70" rx="8" fill="#04121d" opacity=".8"/><rect x="212" y="75" width="76" height="70" rx="8" fill="url(#hub-chip-metal)" stroke="#89c5d0"/>
+<rect x="219" y="82" width="62" height="56" rx="5" fill="#091f31" stroke="#4c7e92"/>
+<rect class="hub-core-pulse" x="225" y="87" width="50" height="46" rx="4" fill="url(#hub-chip-die)" stroke="#9affe0" stroke-width="1.3"/>
+<path d="M229 92H270M229 128H270M230 94V125M269 94V125" stroke="#88d6d5" stroke-opacity=".2"/>
+<text x="250" y="116" text-anchor="middle" fill="#dcfff5" font-size="24" font-weight="700" font-family="Manrope,Arial">AI</text>
+<text x="250" y="127" text-anchor="middle" fill="#a8e8e0" font-size="4.5" letter-spacing="1" font-family="Manrope,Arial">PROCESSOR</text>
+<text x="250" y="52" text-anchor="middle" fill="#a2f4e4" font-size="7" letter-spacing="2" font-family="Manrope,Arial">CONNECTED INTELLIGENCE</text></g>
+<!-- Compact control room. -->
+<g class="hub-control-room"><rect x="21" y="72" width="127" height="83" rx="8" fill="#102d40" stroke="#4b899c"/>
+<text x="84.5" y="65" text-anchor="middle" fill="#bce6eb" font-size="7" letter-spacing="1.2" font-family="Manrope,Arial">CONTROL ROOM</text>
+<rect x="31" y="83" width="48" height="32" rx="3" fill="#051a2a" stroke="#588fa5"/><rect x="86" y="83" width="51" height="32" rx="3" fill="#051a2a" stroke="#588fa5"/>
+<path class="hub-control-trend" d="M36 105H42L47 94L54 108L61 91L67 101H74" stroke="#8affe1" stroke-width="1.5"/>
+<g stroke="#4e8d9e" stroke-width=".7"><path d="M92 92H131M92 101H131M98 88V109M110 88V109M122 88V109"/></g>
+<g class="hub-status" fill="#9affd0"><circle cx="98" cy="92" r="2"/><circle cx="110" cy="101" r="2"/><circle cx="122" cy="92" r="2"/></g>
+<path d="M53 116V122M111 116V122" stroke="#90c4cd" stroke-width="2"/><path d="M34 122H132L138 130H28Z" fill="#356579" stroke="#74acbc"/><path d="M29 131H138V136H29Z" fill="#21465c"/>
+<circle cx="84" cy="129" r="5.5" fill="#c1dde1"/><path d="M73 147V140Q73 133 84 133Q95 133 95 140V147" fill="#408c9e"/><rect x="73" y="141" width="22" height="12" rx="4" fill="#17394d" stroke="#568b9c"/></g>
+<!-- Compact process system: feed vessel, reactor, column, and flowing product. -->
+<g class="hub-process-plant"><text x="413" y="65" text-anchor="middle" fill="#bce6eb" font-size="7" letter-spacing="1.1" font-family="Manrope,Arial">PROCESS AUTOMATION</text>
+<path d="M344 155H483" stroke="#83bec5" stroke-opacity=".5"/>
+<path d="M357 136V148H384V121H394M409 121H426V141H462V103" stroke="#72a5b7" stroke-width="4" stroke-linejoin="round"/>
+<path class="hub-process-flow" d="M357 136V148H384V121H394M409 121H426V141H462V103" stroke="#92ffdc" stroke-width="1.7" stroke-dasharray="4 10" stroke-linejoin="round"/>
+<rect x="346" y="102" width="24" height="36" rx="4" fill="url(#hub-plant-steel)" stroke="#d5f8f1"/><ellipse cx="358" cy="102" rx="12" ry="4" fill="#b9dfe5"/><path d="M350 138V154M367 138V154" stroke="#6b9eb0" stroke-width="2"/>
+<rect x="388" y="88" width="27" height="54" rx="12" fill="url(#hub-plant-steel)" stroke="#d5f8f1"/><rect x="393" y="98" width="16" height="36" rx="5" fill="#136e88"/>
+<g clip-path="url(#hub-reactor-window)"><rect x="393" y="110" width="16" height="28" fill="#51e1be" opacity=".75"/><g class="hub-reactor-bubbles" fill="#d6fff1"><circle cx="398" cy="127" r="1.5"/><circle cx="404" cy="118" r="1.2"/><circle cx="401" cy="136" r="1.3"/></g></g>
+<path d="M401 88V78" stroke="#c3eff0" stroke-width="2"/><rect x="396" y="73" width="11" height="7" rx="2" fill="#2a6b81" stroke="#93dae1"/><path d="M391 143V154M412 143V154" stroke="#6b9eb0" stroke-width="2"/>
+<rect x="452" y="77" width="19" height="69" rx="9" fill="url(#hub-plant-steel)" stroke="#d5f8f1"/><path d="M454 93H469M454 108H469M454 123H469M456 146V154M468 146V154" stroke="#6093a8" stroke-width="1.5"/><path d="M461 77V70H481V101H472" stroke="#b7e2e5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="426" cy="141" r="6" fill="#175674" stroke="#97f4de"/><g class="hub-pump"><path d="M423 138L430 141L423 144Z" fill="#aaffdf"/></g></g>
+<!-- Vision AI: a camera inspects parts and locks onto the product. -->
+<g class="hub-vision-ai"><rect x="175" y="177" width="150" height="45" rx="7" fill="#102d40" stroke="#4b899c"/>
+<path d="M188 206H313" stroke="#41768b" stroke-width="7" stroke-linecap="round"/><path class="hub-inspection-belt" d="M188 206H313" stroke="#91bfc9" stroke-width="1.4" stroke-dasharray="2 8"/>
+<rect x="187" y="184" width="26" height="13" rx="3" fill="#689fae" stroke="#c4f3ec"/><path d="M213 187L221 183V197L213 193Z" fill="#b9e2df"/><circle cx="199" cy="190.5" r="4" fill="#092335" stroke="#9ff4e2"/>
+<path class="hub-vision-beam" d="M221 187L259 183V201L221 193Z" fill="#78ffda" fill-opacity=".09" stroke="#88f7de" stroke-opacity=".25" stroke-width=".6"/>
+<g class="hub-inspected-part"><path d="M263 189L272 185L283 189L274 194Z" fill="#9bd4cc"/><path d="M263 189V199L274 203V194Z" fill="#4a8d9c"/><path d="M274 194V203L283 198V189Z" fill="#65b2b5"/></g>
+<g class="hub-vision-lock" stroke="#a6ffe2" stroke-width="1.3"><path d="M258 190V183H265M279 183H287V190M287 198V206H280M265 206H258V199"/></g>
+<text x="250" y="235" text-anchor="middle" fill="#bce6eb" font-size="7" letter-spacing="1.3" font-family="Manrope,Arial">VISION AI</text>
+<path d="M300 186l3 3 5-6" stroke="#9dffc9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg></div>
 <div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Industrial AI, engineering intelligence, and business automation. Explore JEBG products and consultancy.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="division exports" id="exports-link" href="https://jamilaexim.linker.store/" data-name="International Exports">
