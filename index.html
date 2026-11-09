@@ -5,7 +5,7 @@
 <meta name="description" content="Discover Jamila Exim: explore JEBG AI Technologies and our International Exports business.">
 <link rel="canonical" href="https://www.jamilaexim.com/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.jamilaexim.com/sitemap.xml">
-<meta name="theme-color" content="#0b0d0e">
+<meta name="theme-color" content="#f5fbff">
 <title>Jamila Exim | Technology & International Trade</title>
 <link rel="icon" type="image/png" sizes="64x64" href="./assets/favicon-64-v2.png"><link rel="apple-touch-icon" href="./assets/jamila-exim-logo-v2.png">
 <style>
@@ -213,25 +213,53 @@ footer{color:#858b87}
 @media(prefers-reduced-motion:reduce){.freight-jet{transform:translate(244px,59px) scale(.62)}}
 
 
-/* Rounded division cards and continuous industrial automation. */
-.division{border-radius:26px}
-.tech:after{border-radius:26px 0 0 26px}
-.industrial-gear{animation:industrialGear 12s linear infinite}
-.industrial-gear-reverse{animation:industrialGear 8.5s linear infinite reverse}
-.robot-upper{transform-origin:343px 160px;animation:robotReach 6s ease-in-out infinite}
-.robot-forearm{transform-origin:331px 132px;animation:robotWrist 6s ease-in-out infinite}
-.robot-sparks{animation:robotSpark 6s linear infinite}
-.conveyor-motion{animation:conveyorBelt 2s linear infinite}
-.factory-part{animation:factoryPart 10s linear infinite}
-.factory-part-second{animation-delay:-5s}
-@keyframes industrialGear{to{transform:rotate(360deg)}}
-@keyframes robotReach{0%,100%{transform:rotate(-8deg)}40%,60%{transform:rotate(10deg)}}
-@keyframes robotWrist{0%,100%{transform:rotate(12deg)}40%,60%{transform:rotate(-16deg)}}
-@keyframes robotSpark{0%,34%,67%,100%{opacity:0}40%,44%,49%,54%,60%{opacity:1}42%,47%,52%,57%{opacity:.15}}
-@keyframes conveyorBelt{to{stroke-dashoffset:-32}}
-@keyframes factoryPart{0%{transform:translate(40px,190px);opacity:0}5%,95%{opacity:1}100%{transform:translate(360px,190px);opacity:0}}
+
+
+/* Bright company gateway with an animated process-industry plant. */
+:root{--ink:#17394b;--paper:#f5fbff;--gold:#e5a532;--line:#cfe0e7;color-scheme:light}
+body{background:radial-gradient(ellipse at 0 0,#b8f1ff88,transparent 52%),radial-gradient(ellipse at 100% 90%,#ffdf9670,transparent 50%),#f5fbff;color:#17394b}
+header{border-bottom-color:#cfe0e7}
+.brand strong{color:#18546a}.brand small{color:#62808a}
+.company-logo{background:#fff;box-shadow:0 3px 14px #24657712}
+.header-note,.eyebrow{color:#577a85}.header-note:before,.eyebrow:before{background:#e7a633}
+h1{color:#14384c}h1 em{color:#058ca0}
+.intro-copy{color:#537482}
+.division{border-radius:26px;box-shadow:0 12px 28px #27657b17}
+.tech{background:radial-gradient(ellipse at 80% 5%,#25b7bd66,transparent 68%),linear-gradient(135deg,#085780,#087c91);border-color:#3cbec7;color:#f1fffe}
+.tech:before{background:linear-gradient(145deg,#84fff018,transparent 70%)}
+.tech:after{background:linear-gradient(180deg,#90ffe2,#68e6fb);border-radius:26px 0 0 26px}
+.tech .jebg-panel-brand b{color:#cbfff2;border-color:#88eadd;background:#ffffff0b}
+.tech .jebg-panel-brand>span{color:#e0fffc}.tech .number{color:#bcf6f4!important}
+.tech .category{color:#a5ffe2}.tech h2{color:#fff}
+.tech .description{color:#d3f5f4}.tech .card-action{color:#fff;border-color:#9fe3e64d}
+.tech .arrow{color:#d7ffec;border-color:#99e8e3}
+.tech:hover{border-color:#55d4d6;box-shadow:0 18px 36px #08758b30}
+.tech:hover .arrow{background:#a0ffe2;color:#07516d;border-color:#a0ffe2}
+.exports{background:radial-gradient(ellipse at 85% 5%,#4ec7d388,transparent 65%),linear-gradient(135deg,#145e91,#198d9d);border-color:#5fbbce;color:#fff}
+.exports:before{background:linear-gradient(145deg,#ffdb8a12,transparent 70%)}
+.exports .category{color:#ffe3a0}.exports h2{color:#fff}
+.exports .description{color:#e0f1f5}.exports .card-action{color:#fff;border-color:#b7e3ec55}
+.exports .arrow{color:#ffedbe;border-color:#d4dfb7}
+.exports:hover{border-color:#ffd47e;box-shadow:0 18px 36px #146fa02b}
+.exports:hover .arrow{background:#ffe09e;color:#17536d}
+.below{color:#6b8790;border-color:#cfe0e7}.below strong{color:#315c69}
+footer{color:#6b8790}.footer-tag{color:#537e89}
+.process-plant svg{width:100%;height:100%}
+.plant-flow{animation:plantFlow 2.4s linear infinite}
+.reactor-liquid{animation:reactorLevel 7s ease-in-out infinite}
+.reactor-bubbles{animation:reactorBubbles 3s linear infinite}
+.agitator{transform-origin:190px 143px;animation:agitatorTurn 1.8s ease-in-out infinite}
+.plant-pump{transform-origin:253px 176px;animation:plantPump 2s linear infinite}
+.plant-indicators{animation:plantIndicators 2.2s ease-in-out infinite}
+.plant-telemetry{stroke-dasharray:60;animation:telemetryFlow 3s linear infinite}
+@keyframes plantFlow{to{stroke-dashoffset:-44}}
+@keyframes reactorLevel{50%{transform:translateY(-8px)}}
+@keyframes reactorBubbles{0%{transform:translateY(14px);opacity:0}20%,75%{opacity:.9}100%{transform:translateY(-35px);opacity:0}}
+@keyframes agitatorTurn{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.15)}}
+@keyframes plantPump{to{transform:rotate(360deg)}}
+@keyframes plantIndicators{50%{opacity:.4}}
+@keyframes telemetryFlow{0%{stroke-dashoffset:60}80%,100%{stroke-dashoffset:0}}
 @media(max-width:760px){.division{border-radius:20px}.tech:after{border-radius:20px 0 0 20px}}
-@media(prefers-reduced-motion:reduce){.factory-part{transform:translate(113px,190px)}.factory-part-second{transform:translate(273px,190px)}.robot-sparks{opacity:0}}
 
 </style>
 </head>
@@ -242,34 +270,38 @@ footer{color:#858b87}
 <section class="divisions" aria-label="Explore our business divisions">
 <a class="division tech" id="tech-link" href="https://jebg.jamilaexim.com/" data-name="JEBG AI Technologies">
 <div class="card-top"><span class="jebg-panel-brand"><b>JEBG</b><span>AI TECHNOLOGIES</span></span><span class="number">01 /</span></div>
-<div class="art live-art visual-v3 cpu-visual" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
-<defs><linearGradient id="cpu-metal" x1="140" y1="60" x2="280" y2="180" gradientUnits="userSpaceOnUse"><stop stop-color="#638a9b"/><stop offset=".14" stop-color="#203d51"/><stop offset=".55" stop-color="#0a1b2c"/><stop offset="1" stop-color="#385d72"/></linearGradient><linearGradient id="cpu-die" x1="163" y1="75" x2="254" y2="162" gradientUnits="userSpaceOnUse"><stop stop-color="#1d627a"/><stop offset=".5" stop-color="#0b2b43"/><stop offset="1" stop-color="#143f50"/></linearGradient><radialGradient id="cpu-aura"><stop stop-color="#4ad9eb" stop-opacity=".25"/><stop offset="1" stop-color="#4ad9eb" stop-opacity="0"/></radialGradient><clipPath id="die-clip"><rect x="165" y="79" width="90" height="82" rx="5"/></clipPath></defs>
-<ellipse cx="210" cy="120" rx="170" ry="110" fill="url(#cpu-aura)"/>
-<g stroke="#397083" stroke-width="1"><path d="M20 60H65L83 78H125M295 78H337L355 60H400"/><path d="M20 82H73L91 100H125M295 100H329L347 82H400"/><path d="M20 104H81L99 122H125M295 122H321L339 104H400"/><path d="M20 126H89L107 144H125M295 144H313L331 126H400"/><path d="M20 148H97L115 166H125M295 166H305L323 148H400"/></g><g class="cpu-data" stroke="#93ffee" stroke-width="2" stroke-dasharray="8 100"><path d="M20 60H65L83 78H125M295 78H337L355 60H400"/><path d="M20 82H73L91 100H125M295 100H329L347 82H400"/><path d="M20 104H81L99 122H125M295 122H321L339 104H400"/><path d="M20 126H89L107 144H125M295 144H313L331 126H400"/><path d="M20 148H97L115 166H125M295 166H305L323 148H400"/></g>
-<g stroke="#6c9eac" stroke-width="5"><path d="M151 60V43M151 180V197M142 64H125M278 64H295"/><path d="M164 60V43M164 180V197M142 76H125M278 76H295"/><path d="M177 60V43M177 180V197M142 88H125M278 88H295"/><path d="M190 60V43M190 180V197M142 100H125M278 100H295"/><path d="M203 60V43M203 180V197M142 112H125M278 112H295"/><path d="M216 60V43M216 180V197M142 124H125M278 124H295"/><path d="M229 60V43M229 180V197M142 136H125M278 136H295"/><path d="M242 60V43M242 180V197M142 148H125M278 148H295"/><path d="M255 60V43M255 180V197M142 160H125M278 160H295"/><path d="M268 60V43M268 180V197M142 172H125M278 172H295"/></g><g stroke="#a4e4db" stroke-width="1"><path d="M151 60V43M151 180V197M142 64H125M278 64H295"/><path d="M164 60V43M164 180V197M142 76H125M278 76H295"/><path d="M177 60V43M177 180V197M142 88H125M278 88H295"/><path d="M190 60V43M190 180V197M142 100H125M278 100H295"/><path d="M203 60V43M203 180V197M142 112H125M278 112H295"/><path d="M216 60V43M216 180V197M142 124H125M278 124H295"/><path d="M229 60V43M229 180V197M142 136H125M278 136H295"/><path d="M242 60V43M242 180V197M142 148H125M278 148H295"/><path d="M255 60V43M255 180V197M142 160H125M278 160H295"/><path d="M268 60V43M268 180V197M142 172H125M278 172H295"/></g>
-<rect x="142" y="64" width="136" height="120" rx="10" fill="#020c13" opacity=".8"/>
-<rect x="142" y="60" width="136" height="120" rx="10" fill="url(#cpu-metal)" stroke="#709bac"/>
-<rect x="151" y="69" width="118" height="102" rx="6" fill="#091c2a" stroke="#3e697c"/>
-<rect class="cpu-edge" x="158" y="73" width="104" height="94" rx="7" stroke="#72f7e8" stroke-width="1.3"/>
-<rect x="165" y="79" width="90" height="82" rx="5" fill="url(#cpu-die)" stroke="#4ad9eb" stroke-opacity=".6"/>
-<g stroke="#70c9d2" stroke-opacity=".2" stroke-width=".6"><path d="M173 86H247M173 94H247M173 146H247M173 154H247M174 86V154M182 86V154M238 86V154M246 86V154"/></g>
-<g clip-path="url(#die-clip)"><rect class="cpu-scan" x="165" y="75" width="90" height="15" fill="#a4fff0" opacity=".18"/></g>
-<text x="210" y="128" text-anchor="middle" fill="#d0fff5" font-size="29" font-weight="700" font-family="Manrope,Arial">AI</text>
-<text x="210" y="146" text-anchor="middle" fill="#83c5d6" font-size="6" letter-spacing="2" font-family="Manrope,Arial">NEURAL PROCESSOR</text>
-<circle cx="151" cy="169" r="2" fill="#c0fff0"/><g class="cpu-status" fill="#9bffda"><circle cx="172" cy="174" r="1.4"/><circle cx="179" cy="174" r="1.4"/><circle cx="186" cy="174" r="1.4"/></g>
-
-<!-- Industrial automation: geared drive, robotic assembly, and conveyor. -->
-<g class="industrial-drive"><g transform="translate(61 119)"><g class="industrial-gear"><polygon points="24.00,0.00 23.88,2.35 23.54,4.68 22.97,6.97 17.52,7.26 16.72,8.94 15.76,10.53 14.66,12.03 16.97,16.97 15.23,18.55 13.33,19.96 11.31,21.17 7.26,17.52 5.50,18.14 3.70,18.60 1.86,18.87 0.00,24.00 -2.35,23.88 -4.68,23.54 -6.97,22.97 -7.26,17.52 -8.94,16.72 -10.53,15.76 -12.03,14.66 -16.97,16.97 -18.55,15.23 -19.96,13.33 -21.17,11.31 -17.52,7.26 -18.14,5.50 -18.60,3.70 -18.87,1.86 -24.00,0.00 -23.88,-2.35 -23.54,-4.68 -22.97,-6.97 -17.52,-7.26 -16.72,-8.94 -15.76,-10.53 -14.66,-12.03 -16.97,-16.97 -15.23,-18.55 -13.33,-19.96 -11.31,-21.17 -7.26,-17.52 -5.50,-18.14 -3.70,-18.60 -1.86,-18.87 -0.00,-24.00 2.35,-23.88 4.68,-23.54 6.97,-22.97 7.26,-17.52 8.94,-16.72 10.53,-15.76 12.03,-14.66 16.97,-16.97 18.55,-15.23 19.96,-13.33 21.17,-11.31 17.52,-7.26 18.14,-5.50 18.60,-3.70 18.87,-1.86" fill="#16333f" stroke="#70afbb" stroke-width="1.3"/><circle r="13.68" fill="#081c29" stroke="#3f7a8d"/><circle r="4.800000000000001" fill="#89e6d7"/><path d="M-10.8 0H10.8M0 -10.8V10.8" stroke="#5d9eab" stroke-width="2"/></g></g><g transform="translate(96 149)"><g class="industrial-gear-reverse"><polygon points="17.00,0.00 16.92,1.67 16.67,3.32 16.27,4.93 12.41,5.14 11.84,6.33 11.17,7.46 10.38,8.52 12.02,12.02 10.78,13.14 9.44,14.13 8.01,14.99 5.14,12.41 3.90,12.85 2.62,13.17 1.32,13.37 0.00,17.00 -1.67,16.92 -3.32,16.67 -4.93,16.27 -5.14,12.41 -6.33,11.84 -7.46,11.17 -8.52,10.38 -12.02,12.02 -13.14,10.78 -14.13,9.44 -14.99,8.01 -12.41,5.14 -12.85,3.90 -13.17,2.62 -13.37,1.32 -17.00,0.00 -16.92,-1.67 -16.67,-3.32 -16.27,-4.93 -12.41,-5.14 -11.84,-6.33 -11.17,-7.46 -10.38,-8.52 -12.02,-12.02 -10.78,-13.14 -9.44,-14.13 -8.01,-14.99 -5.14,-12.41 -3.90,-12.85 -2.62,-13.17 -1.32,-13.37 -0.00,-17.00 1.67,-16.92 3.32,-16.67 4.93,-16.27 5.14,-12.41 6.33,-11.84 7.46,-11.17 8.52,-10.38 12.02,-12.02 13.14,-10.78 14.13,-9.44 14.99,-8.01 12.41,-5.14 12.85,-3.90 13.17,-2.62 13.37,-1.32" fill="#16333f" stroke="#70afbb" stroke-width="1.3"/><circle r="9.69" fill="#081c29" stroke="#3f7a8d"/><circle r="3.4000000000000004" fill="#89e6d7"/><path d="M-7.65 0H7.65M0 -7.65V7.65" stroke="#5d9eab" stroke-width="2"/></g></g><path d="M39 151H74L83 168H110" stroke="#477c8a" stroke-width="2"/><rect x="37" y="151" width="39" height="6" rx="2" fill="#294b58"/></g>
-<g class="industrial-robot">
-<path d="M315 181H374L369 188H320Z" fill="#345364" stroke="#76acb6"/><path d="M332 162H356V181H332Z" fill="#234858" stroke="#6cabb9"/>
-<g class="robot-upper"><path d="M342 163L325 133L333 125L353 156Z" fill="#347181" stroke="#9ce0dd" stroke-width="1.2"/><circle cx="343" cy="160" r="7" fill="#102c3e" stroke="#86cfcf"/><circle cx="343" cy="160" r="2" fill="#b8fff0"/>
-<g class="robot-forearm"><path d="M328 131L350 104L358 110L336 140Z" fill="#4b8995" stroke="#a0d9d5" stroke-width="1.2"/><circle cx="331" cy="132" r="6" fill="#173e50" stroke="#88ced1"/><path d="M350 104L367 111L362 122L354 119L357 112L349 110" stroke="#b4d9d9" stroke-width="3" stroke-linejoin="round"/><path d="M362 121L366 129" stroke="#84f0e1" stroke-width="2"/>
-<g class="robot-sparks" stroke="#adfff0" stroke-width="1.3"><path d="M367 133L371 139M371 130L379 131M363 133L361 140M370 126L376 122"/><circle cx="367" cy="130" r="2" fill="#dcfff4"/></g></g></g></g>
-<g class="industrial-conveyor"><rect x="33" y="201" width="354" height="11" rx="5.5" fill="#0d2531" stroke="#426c78"/><path d="M42 216V212M378 216V212" stroke="#6b9eaa" stroke-width="2"/>
-<g class="conveyor-motion" stroke="#7ab7b9" stroke-width="2" stroke-dasharray="3 13"><path d="M39 207H381"/></g>
-<g class="factory-part"><path d="M0 0L8-5L19-2L11 3Z" fill="#6fb2b8"/><path d="M0 0V8L11 11V3Z" fill="#315d70"/><path d="M11 3V11L19 6V-2Z" fill="#478d9b"/></g>
-<g class="factory-part factory-part-second"><path d="M0 0L8-5L19-2L11 3Z" fill="#6fb2b8"/><path d="M0 0V8L11 11V3Z" fill="#315d70"/><path d="M11 3V11L19 6V-2Z" fill="#478d9b"/></g></g>
-<text x="210" y="225" text-anchor="middle" fill="#86bfcf" font-size="8" letter-spacing="3" font-family="Manrope,Arial">INDUSTRIAL AI IN MOTION</text></svg></div>
+<div class="art live-art visual-v3 process-plant" aria-hidden="true"><svg viewBox="0 0 420 240" fill="none">
+<defs>
+<linearGradient id="plant-steel" x1="0" x2="1"><stop stop-color="#78bdcf"/><stop offset=".25" stop-color="#d5f0ee"/><stop offset=".5" stop-color="#f2fffa"/><stop offset=".75" stop-color="#aad6dc"/><stop offset="1" stop-color="#66a5bc"/></linearGradient>
+<linearGradient id="plant-liquid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7effcc"/><stop offset="1" stop-color="#15c9b2"/></linearGradient>
+<clipPath id="reactor-window"><rect x="168" y="94" width="44" height="74" rx="13"/></clipPath>
+</defs>
+<!-- Foundations, process pipework, and working platforms. -->
+<path d="M30 204H392" stroke="#c7f3f1" stroke-opacity=".45" stroke-width="2"/>
+<path d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#073c57" stroke-opacity=".4" stroke-width="9" stroke-linejoin="round"/>
+<path d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#b7e8e9" stroke-width="5" stroke-linejoin="round"/>
+<path class="plant-flow" d="M56 178V193H145V151H167M213 151H253V176H300V137H332M102 96H137V77H166M212 77H250V110H282" stroke="#71ffd4" stroke-width="2.6" stroke-dasharray="7 15" stroke-linejoin="round"/>
+<!-- Feed storage vessel. -->
+<path d="M42 104V181M101 104V181" stroke="#164d6b" stroke-width="4"/><rect x="40" y="94" width="64" height="81" rx="7" fill="url(#plant-steel)" stroke="#e6fffa"/><ellipse cx="72" cy="94" rx="32" ry="9" fill="#b9e6e8" stroke="#edfff8"/><ellipse cx="72" cy="174" rx="31" ry="7" fill="#7fb8c9"/><rect x="52" y="114" width="40" height="36" rx="3" fill="#0e7590" fill-opacity=".65"/><path d="M57 142H87M57 135H76" stroke="#9afae1" stroke-width="2"/><text x="72" y="125" text-anchor="middle" fill="#e6fffa" font-size="6" font-family="Arial" letter-spacing="1">FEED</text>
+<!-- Stirred process reactor with visible circulating product. -->
+<path d="M163 173V202M217 173V202" stroke="#265e79" stroke-width="5"/>
+<rect x="157" y="77" width="66" height="103" rx="25" fill="url(#plant-steel)" stroke="#eafff7"/>
+<ellipse cx="190" cy="78" rx="31" ry="12" fill="#c9edf0" stroke="#f1fffb"/>
+<path d="M190 50V73" stroke="#e4fffa" stroke-width="4"/><rect x="178" y="39" width="24" height="15" rx="3" fill="#1c5b7b" stroke="#b4fff0"/><path d="M183 42V51M188 42V51M193 42V51M198 42V51" stroke="#75b7c9"/>
+<rect x="168" y="94" width="44" height="74" rx="13" fill="#076080" stroke="#76bcc8"/>
+<g clip-path="url(#reactor-window)"><rect class="reactor-liquid" x="168" y="111" width="44" height="66" fill="url(#plant-liquid)" opacity=".78"/><g class="reactor-bubbles" stroke="#e0fff3" fill="#cbffec" fill-opacity=".3"><circle cx="177" cy="153" r="3"/><circle cx="199" cy="143" r="2.5"/><circle cx="185" cy="130" r="2"/><circle cx="204" cy="165" r="2"/></g><path d="M190 95V157" stroke="#e3fff5" stroke-width="2"/><g class="agitator"><path d="M176 135L204 143M176 143L204 135M178 151H202" stroke="#e7fff3" stroke-width="2.3"/></g></g>
+<rect x="175" y="81" width="30" height="8" rx="2" fill="#0e718d"/><text x="190" y="87" text-anchor="middle" fill="#bffff0" font-size="5" font-family="Arial" letter-spacing=".5">REACTOR</text>
+<!-- Fractionation column, service ladder, and condenser. -->
+<path d="M279 183V202M300 183V202" stroke="#235b75" stroke-width="4"/><rect x="273" y="49" width="34" height="139" rx="15" fill="url(#plant-steel)" stroke="#e4fff7"/>
+<path d="M275 76H305M275 99H305M275 122H305M275 145H305M275 168H305" stroke="#659eb3" stroke-width="2"/>
+<path d="M312 65V192M319 65V192M312 77H319M312 90H319M312 103H319M312 116H319M312 129H319M312 142H319M312 155H319M312 168H319M312 181H319" stroke="#c0e9e8" stroke-width="1.2"/>
+<path d="M289 49V30H347V67" stroke="#c1efea" stroke-width="5" stroke-linejoin="round"/><path class="plant-flow" d="M289 49V30H347V67" stroke="#8affdc" stroke-width="2" stroke-dasharray="6 12"/>
+<rect x="330" y="66" width="37" height="48" rx="6" fill="url(#plant-steel)" stroke="#d8fff4"/><path d="M338 75V105M345 75V105M352 75V105M359 75V105" stroke="#6da6b8" stroke-width="2"/><path d="M348 114V135H367V190H333V140" stroke="#c6f4ee" stroke-width="4" stroke-linejoin="round"/>
+<!-- Product pump and live process instruments. -->
+<circle cx="253" cy="176" r="11" fill="#1c7691" stroke="#b8ffeb" stroke-width="2"/><g class="plant-pump"><path d="M247 171L258 176L247 181Z" fill="#a4ffe2"/></g>
+<g class="plant-indicators" fill="#a3ffba"><circle cx="137" cy="77" r="3"/><circle cx="250" cy="110" r="3"/><circle cx="300" cy="137" r="3"/></g>
+<rect x="78" y="39" width="43" height="27" rx="4" fill="#094a6a" stroke="#86dfe6"/><path class="plant-telemetry" d="M84 56H90L94 46L99 60L104 51H115" stroke="#7dffd8" stroke-width="1.5"/><path d="M99 66V77" stroke="#9de4e5"/>
+<text x="210" y="228" text-anchor="middle" fill="#c9fff2" font-size="8" letter-spacing="2.5" font-family="Manrope,Arial">INTELLIGENT PROCESS AUTOMATION</text></svg></div>
 <div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Industrial AI, engineering intelligence, and business automation. Explore JEBG products and consultancy.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="division exports" id="exports-link" href="https://jamilaexim.linker.store/" data-name="International Exports">
