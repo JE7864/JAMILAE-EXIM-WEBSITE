@@ -321,6 +321,14 @@ footer{color:#809ba7}.footer-tag{color:#afc3cc}
 @media(max-width:760px){.tech .live-art{width:175px;height:115px;right:3px;top:29px}.tech .division-content{padding-right:135px}.tech .card-action{width:calc(100% + 135px)}.tech h2{font-size:clamp(19px,4.8vw,25px)}}
 @media(max-width:380px){.tech .live-art{width:140px}.tech .division-content{padding-right:105px}.tech .card-action{width:calc(100% + 105px)}}
 
+
+/* Campaign management extends the central AI system into business workflows. */
+.campaign-chart{transform-box:fill-box;transform-origin:center bottom;animation:campaignChart 4s ease-in-out infinite}
+.campaign-workflow{animation:campaignWorkflow 2.5s linear infinite}
+.campaign-check{animation:campaignCheck 4s ease-in-out infinite}
+@keyframes campaignChart{0%,100%{transform:scaleY(.65)}50%{transform:scaleY(1)}}
+@keyframes campaignWorkflow{to{stroke-dashoffset:-26}}
+@keyframes campaignCheck{0%,20%,100%{opacity:.25}45%,80%{opacity:1}}
 </style>
 </head>
 <body>
@@ -334,8 +342,8 @@ footer{color:#809ba7}.footer-tag{color:#afc3cc}
 <defs><linearGradient id="hub-chip-metal" x1="212" y1="75" x2="288" y2="145" gradientUnits="userSpaceOnUse"><stop stop-color="#82abb8"/><stop offset=".2" stop-color="#31576f"/><stop offset=".65" stop-color="#102b40"/><stop offset="1" stop-color="#548896"/></linearGradient><linearGradient id="hub-chip-die"><stop stop-color="#206b7d"/><stop offset="1" stop-color="#0c304b"/></linearGradient><linearGradient id="hub-plant-steel"><stop stop-color="#629aad"/><stop offset=".45" stop-color="#d5f0eb"/><stop offset="1" stop-color="#71afbf"/></linearGradient><radialGradient id="hub-glow"><stop stop-color="#62e9db" stop-opacity=".2"/><stop offset="1" stop-color="#62e9db" stop-opacity="0"/></radialGradient><clipPath id="hub-reactor-window"><rect x="393" y="98" width="16" height="36" rx="5"/></clipPath></defs>
 <ellipse cx="250" cy="110" rx="100" ry="91" fill="url(#hub-glow)"/>
 <!-- One central processor, three connected industrial capabilities. -->
-<g stroke="#72c8d4" stroke-opacity=".3" stroke-width="1.2"><path d="M202 110H149M298 110H344M250 155V176"/></g>
-<g class="hub-data-stream" stroke="#a7ffe5" stroke-width="2" stroke-dasharray="5 15"><path d="M149 110H202M298 110H344M250 155V176"/></g>
+<g stroke="#72c8d4" stroke-opacity=".3" stroke-width="1.2"><path d="M202 110H149M298 110H344M250 155V166H160V177M250 166H340V177"/></g>
+<g class="hub-data-stream" stroke="#a7ffe5" stroke-width="2" stroke-dasharray="5 15"><path d="M149 110H202M298 110H344M250 155V166H160V177M250 166H340V177"/></g>
 <g class="hub-chip"><g stroke="#8ec8cc" stroke-width="3"><path d="M223 75V65M223 145V155M212 82H202M288 82H298"/><path d="M232 75V65M232 145V155M212 91H202M288 91H298"/><path d="M241 75V65M241 145V155M212 100H202M288 100H298"/><path d="M250 75V65M250 145V155M212 109H202M288 109H298"/><path d="M259 75V65M259 145V155M212 118H202M288 118H298"/><path d="M268 75V65M268 145V155M212 127H202M288 127H298"/><path d="M277 75V65M277 145V155M212 136H202M288 136H298"/></g>
 <rect x="212" y="78" width="76" height="70" rx="8" fill="#04121d" opacity=".8"/><rect x="212" y="75" width="76" height="70" rx="8" fill="url(#hub-chip-metal)" stroke="#89c5d0"/>
 <rect x="219" y="82" width="62" height="56" rx="5" fill="#091f31" stroke="#4c7e92"/>
@@ -364,8 +372,20 @@ footer{color:#809ba7}.footer-tag{color:#afc3cc}
 <path d="M401 88V78" stroke="#c3eff0" stroke-width="2"/><rect x="396" y="73" width="11" height="7" rx="2" fill="#2a6b81" stroke="#93dae1"/><path d="M391 143V154M412 143V154" stroke="#6b9eb0" stroke-width="2"/>
 <rect x="452" y="77" width="19" height="69" rx="9" fill="url(#hub-plant-steel)" stroke="#d5f8f1"/><path d="M454 93H469M454 108H469M454 123H469M456 146V154M468 146V154" stroke="#6093a8" stroke-width="1.5"/><path d="M461 77V70H481V101H472" stroke="#b7e2e5" stroke-width="2.5" stroke-linejoin="round"/>
 <circle cx="426" cy="141" r="6" fill="#175674" stroke="#97f4de"/><g class="hub-pump"><path d="M423 138L430 141L423 144Z" fill="#aaffdf"/></g></g>
+<!-- Business automation: campaign workflow, scheduled messages, and performance. -->
+<g class="hub-business-automation">
+<rect x="85" y="177" width="150" height="45" rx="7" fill="#102d40" stroke="#4b899c"/>
+<rect x="93" y="184" width="55" height="30" rx="3" fill="#061b2b" stroke="#4f8c9f"/>
+<path d="M98 190H140" stroke="#4a8192" stroke-width=".7"/>
+<g class="campaign-chart" fill="#70dbc7"><rect x="100" y="202" width="6" height="8" rx="1"/><rect x="110" y="198" width="6" height="12" rx="1"/><rect x="120" y="194" width="6" height="16" rx="1"/><rect x="130" y="197" width="6" height="13" rx="1"/></g>
+<path d="M156 198H221" stroke="#497e92" stroke-width="1.1"/>
+<path class="campaign-workflow" d="M156 198H221" stroke="#a7ffe5" stroke-width="1.5" stroke-dasharray="3 10"/>
+<g stroke="#8ad7d6" stroke-width=".9" fill="#133c50"><rect x="154" y="188" width="17" height="19" rx="3"/><rect x="180" y="188" width="17" height="19" rx="3"/><rect x="206" y="188" width="19" height="19" rx="3"/></g>
+<g stroke="#b3f6e2" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"><path d="M159 194h7v6h-7zM159 194l3.5 3 3.5-3"/><path d="M184 194h9v7h-9zM186 192v3M191 192v3M185 197h7"/><path class="campaign-check" d="m210 198 3 3 7-8"/></g>
+<text x="160" y="235" text-anchor="middle" fill="#bce6eb" font-size="7" letter-spacing=".8" font-family="Manrope,Arial">BUSINESS AUTOMATION</text>
+</g>
 <!-- Vision AI: a camera inspects parts and locks onto the product. -->
-<g class="hub-vision-ai"><rect x="175" y="177" width="150" height="45" rx="7" fill="#102d40" stroke="#4b899c"/>
+<g class="hub-vision-ai" transform="translate(90 0)"><rect x="175" y="177" width="150" height="45" rx="7" fill="#102d40" stroke="#4b899c"/>
 <path d="M188 206H313" stroke="#41768b" stroke-width="7" stroke-linecap="round"/><path class="hub-inspection-belt" d="M188 206H313" stroke="#91bfc9" stroke-width="1.4" stroke-dasharray="2 8"/>
 <rect x="187" y="184" width="26" height="13" rx="3" fill="#689fae" stroke="#c4f3ec"/><path d="M213 187L221 183V197L213 193Z" fill="#b9e2df"/><circle cx="199" cy="190.5" r="4" fill="#092335" stroke="#9ff4e2"/>
 <path class="hub-vision-beam" d="M221 187L259 183V201L221 193Z" fill="#78ffda" fill-opacity=".09" stroke="#88f7de" stroke-opacity=".25" stroke-width=".6"/>
