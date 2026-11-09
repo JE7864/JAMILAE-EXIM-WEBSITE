@@ -171,6 +171,23 @@ footer{color:#858b87}
 @media(max-width:760px){.company-logo{width:44px;height:44px}.brand strong{font-size:14px}.brand small{font-size:7px}}
 @media(max-width:760px) and (max-height:700px){.company-logo{width:36px;height:36px}}
 
+
+/* Live neural processing and continuous international trade. */
+.live-art{opacity:1;overflow:visible}
+.live-art canvas{display:block;width:100%;height:100%}
+.division:hover .live-art{transform:none}
+@media(min-width:761px){
+ .live-art{height:clamp(130px,24vh,250px);top:35px}
+}
+@media(max-width:760px){
+ .live-art{inset:29px 8px auto auto;width:135px;height:110px;opacity:.8}
+ .division-content{position:relative;z-index:1}
+ .tech .division-content,.exports .division-content{padding-right:100px}
+ .card-action{width:calc(100% + 100px)}
+ .tech h2,.exports h2{font-size:clamp(20px,5.3vw,25px)}
+}
+@media(max-width:380px){.live-art{width:105px;right:3px}.tech .division-content,.exports .division-content{padding-right:75px}.card-action{width:calc(100% + 75px)}}
+
 </style>
 </head>
 <body>
@@ -180,12 +197,12 @@ footer{color:#858b87}
 <section class="divisions" aria-label="Explore our business divisions">
 <a class="division tech" id="tech-link" href="https://jebg.jamilaexim.com/" data-name="JEBG AI Technologies">
 <div class="card-top"><span class="jebg-panel-brand"><b>JEBG</b><span>AI TECHNOLOGIES</span></span><span class="number">01 /</span></div>
-<div class="art" aria-hidden="true"><svg viewBox="0 0 400 250" fill="none"><defs><radialGradient id="glow"><stop stop-color="#4ad9eb" stop-opacity=".25"/><stop offset="1" stop-color="#4ad9eb" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="120" r="110" fill="url(#glow)"/><g stroke="#4ad9eb" stroke-width=".65"><circle cx="200" cy="120" r="75" opacity=".55"/><circle cx="200" cy="120" r="91" opacity=".2"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="32" ry="75" transform="rotate(-35 200 120)" opacity=".5"/><ellipse cx="200" cy="120" rx="75" ry="27" opacity=".55"/><path d="M125 120h150M200 45v150" opacity=".3"/><path d="m111 45 39 29 50-29 50 29 39-29M105 191l45-25 50 29 50-29 45 25" opacity=".35"/></g><g class="orbit" style="transform-origin:200px 120px"><ellipse cx="200" cy="120" rx="122" ry="50" transform="rotate(-25 200 120)" stroke="#4ad9eb" stroke-width=".7" opacity=".65"/><circle cx="310" cy="68" r="3" fill="#4ad9eb"/></g><g class="pulse" fill="#8ae0bd"><circle cx="200" cy="45" r="2.5"/><circle cx="125" cy="120" r="2.5"/><circle cx="248" cy="162" r="2.5"/><circle cx="172" cy="99" r="2"/></g></svg></div>
+<div class="art live-art" aria-hidden="true"><canvas data-scene="ai"></canvas></div>
 <div class="division-content"><div class="category">Artificial intelligence & technology</div><h2>JEBG AI Technologies</h2><p class="description">Industrial AI, engineering intelligence, and business automation. Explore JEBG products and consultancy.</p><div class="card-action"><span>Explore JEBG AI Technologies</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="division exports" id="exports-link" href="https://jamilaexim.linker.store/" data-name="International Exports">
 <div class="card-top"><span>Trade beyond borders</span><span class="number">02 /</span></div>
-<div class="art" aria-hidden="true"><svg viewBox="0 0 400 250" fill="none"><g stroke="#a0bdce" stroke-width=".65"><circle cx="200" cy="120" r="79" opacity=".65"/><ellipse cx="200" cy="120" rx="31" ry="79" opacity=".5"/><ellipse cx="200" cy="120" rx="59" ry="79" opacity=".3"/><ellipse cx="200" cy="120" rx="79" ry="27" opacity=".5"/><ellipse cx="200" cy="120" rx="68" ry="52" opacity=".3"/><path d="M121 120h158M200 41v158" opacity=".35"/></g><path d="M75 157Q187-32 312 98M98 82Q201 223 331 133" stroke="#d9bb80" stroke-width="1" stroke-dasharray="3 5" opacity=".8"/><path d="m151 78 15-5 13 10 18-4 10 10-11 17-9 2-4 22-13-5-11-20-15-7 7-20Zm66 44 13-10 21 7 11 18-9 12-14 1-8 22-12-8-2-42Z" fill="#a0bdce" opacity=".18"/><g class="pulse" fill="#d9bb80"><circle cx="100" cy="122" r="3"/><circle cx="296" cy="80" r="3"/><circle cx="301" cy="151" r="3"/></g><circle cx="200" cy="120" r="105" stroke="#a0bdce" stroke-opacity=".1"/><path d="M44 207h312" stroke="#a0bdce" stroke-opacity=".12"/></svg></div>
+<div class="art live-art" aria-hidden="true"><canvas data-scene="trade"></canvas></div>
 <div class="division-content"><div class="category">Global commerce & trade</div><h2>International Exports</h2><p class="description">Discover our export business, explore our products, and connect with Jamila Exim for international trade.</p><div class="card-action"><span>Explore International Exports</span><span class="arrow" aria-hidden="true">↗</span></div></div>
 </a>
 </section>
@@ -194,6 +211,7 @@ footer{color:#858b87}
 <footer><span>© <span id="year">2026</span> Jamila Exim. All rights reserved.</span><span class="footer-tag">Technology meets global opportunity.</span></footer>
 <div class="transition" id="transition" role="status" aria-live="polite" aria-atomic="true"><p>Jamila Exim</p><strong id="destination"></strong><span class="loader" aria-hidden="true"></span><p>Opening your destination</p></div>
 <script src="./destinations.js"></script>
+<script src="./division-animations.js" defer></script>
 <script>
 (() => {
 document.getElementById('year').textContent = new Date().getFullYear();
